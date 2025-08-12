@@ -1,0 +1,22 @@
+System.register("chunks:///_virtual/pop-setting-panel",["./PopSettingPanel.ts"],(function(){return{setters:[null],execute:function(){}}}));
+
+System.register("chunks:///_virtual/PopSettingPanel.ts",["./rollupPluginModLoBabelHelpers.js","cc","./app.ts","./Config2.ts","./BasePopView.ts","./StateCtrl.ts","./TopLoading.ts"],(function(t){var e,i,n,a,o,r,s,c,l,u,f,p,g,h;return{setters:[function(t){e=t.applyDecoratedDescriptor,i=t.inheritsLoose,n=t.initializerDefineProperty,a=t.assertThisInitialized,o=t.asyncToGenerator},function(t){r=t.cclegacy,s=t._decorator,c=t.Label,l=t.Sprite},function(t){u=t.app},function(t){f=t.version},function(t){p=t.BasePopView},function(t){g=t.StateCtrl},function(t){h=t.TopLoading}],execute:function(){var b,S,v,m,d,y,P,w,k,z,L,C,T,M,A,B,I,E,V,_,D;r._RF.push({},"475c4ABzVVPTozUJb9Sosua","PopSettingPanel",void 0);var H=s.ccclass,F=s.property;t("PopSettingPanel",(b=H("PopSettingPanel"),S=F(c),v=F(g),m=F(g),d=F(g),y=F(g),P=F(c),w=F(c),k=F(c),z=F(l),b((T=e((C=function(t){function e(){for(var e,i=arguments.length,o=new Array(i),r=0;r<i;r++)o[r]=arguments[r];return e=t.call.apply(t,[this].concat(o))||this,n(e,"userId",T,a(e)),n(e,"musicState",M,a(e)),n(e,"soundState",A,a(e)),n(e,"shakeState",B,a(e)),n(e,"locationState",I,a(e)),n(e,"version",E,a(e)),n(e,"nameLbl",V,a(e)),n(e,"beginLbl",_,a(e)),n(e,"headImg",D,a(e)),e.location=!0,e}i(e,t);var r=e.prototype;return r.changeMusicState=function(){u.store.setting.setActiveMusic(!u.store.setting.activeMusic),this.musicState.state=u.store.setting.activeMusic?1:0},r.changeSoundState=function(){u.store.setting.setActiveEffect(!u.store.setting.activeEffect),this.soundState.state=u.store.setting.activeEffect?1:0},r.changeShakeState=function(){u.store.setting.setActiveShake(!u.store.setting.activeShake),this.shakeState.state=u.store.setting.activeShake?1:0},r.changeLocationState=function(){this.location=!this.location,this.locationState.state=this.location?1:0,u.manager.ui.showToast(this.location?"开启定位":"关闭定位")},r.onClickCustomer=function(){},r.onClickBackHome=function(){this.hide(),h.loadPage("PageHome")},r.onClickSelectLevel=function(){u.manager.ui.show({name:"PopSelectLevel"})},r.onShow=function(e){t.prototype.onShow.call(this,e),this.refresh()},r.refresh=function(){var t=o((function*(){this.musicState.state=u.store.setting.activeMusic?1:0,this.soundState.state=u.store.setting.activeEffect?1:0,this.shakeState.state=u.store.setting.activeShake?1:0,this.locationState.state=location?1:0,this.version.string="v"+f}));return function(){return t.apply(this,arguments)}}(),r.infinityProp=function(){u.data.debug.infinityProp=!u.data.debug.infinityProp,u.manager.ui.showToast(u.data.debug.infinityProp?"开启无限道具":"关闭无限道具")},e}(p)).prototype,"userId",[S],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),M=e(C.prototype,"musicState",[v],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),A=e(C.prototype,"soundState",[m],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),B=e(C.prototype,"shakeState",[d],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),I=e(C.prototype,"locationState",[y],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),E=e(C.prototype,"version",[P],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),V=e(C.prototype,"nameLbl",[w],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),_=e(C.prototype,"beginLbl",[k],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),D=e(C.prototype,"headImg",[z],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),L=C))||L));r._RF.pop()}}}));
+
+(function(r) {
+  r('virtual:///prerequisite-imports/pop-setting-panel', 'chunks:///_virtual/pop-setting-panel'); 
+})(function(mid, cid) {
+    System.register(mid, [cid], function (_export, _context) {
+    return {
+        setters: [function(_m) {
+            var _exportObj = {};
+
+            for (var _key in _m) {
+              if (_key !== "default" && _key !== "__esModule") _exportObj[_key] = _m[_key];
+            }
+      
+            _export(_exportObj);
+        }],
+        execute: function () { }
+    };
+    });
+});
